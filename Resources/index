@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Resources - PSIT</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="b88d04fba731603756b1.css">
+      <link href="main.css" rel="stylesheet">
+      <style>
+         .resources-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+         }
+
+         .resource-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+            background-color: #fff;
+         }
+
+         .resource-card:hover {
+            transform: scale(1.05);
+         }
+
+         .icon img {
+            width: 50px;
+            height: 50px;
+         }
+
+         .resource-info {
+            margin-top: 10px;
+         }
+
+         .resource-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+         }
+
+         .resource-link:hover {
+            background-color: #0056b3;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="padding1">
+            <header id="header" class="shadow bg-transparent">
+               <nav class="container navbar">
+                  <img src="../Images/psit_sqr_white.png" width="200" height="200"> 
+                  <button class="toggle-button"><span><i class="fas fa-bars"></i></span></button>
+                  <div class="collapse">
+                     <ul class="navbar-nav">
+                        <a href="../index.html" class="nav-link">Home</a> 
+                        <a href="../Team Page/index_team.html" class="nav-link">Meet The Team</a> 
+                        <a href="../Blog Page/index_blog.html" class="nav-link">Blog</a> 
+                        <a href="../Events Page/index_events.html" class="nav-link">Events</a>
+                        <a href="resources.html" class="nav-link">Resources</a> <!-- Link to Resources page -->
+                     </ul>
+                  </div>
+                  <ul class="navbar-nav"></ul>
+               </nav>
+            </header>
+         </div>
+         <main id="site-main">
+            <section class="resources-showcase">
+               <header>
+                  <h2 class="blog-heading">Resources</h2>
+               </header>
+               <div class="resources-container">
+                  <div class="resource-card">
+                     <div class="icon"><img src="path/to/pdf-icon.png" alt="PDF Icon"></div>
+                     <div class="resource-info">
+                        <h2>Lecture Notes - Subject X</h2>
+                        <p>Comprehensive notes covering all topics in Subject X.</p>
+                        <a href="https://link-to-your-cloud-resource" class="resource-link">View Resource</a>
+                     </div>
+                  </div>
+                  <div class="resource-card">
+                     <div class="icon"><img src="path/to/pyq-icon.png" alt="PYQ Icon"></div>
+                     <div class="resource-info">
+                        <h2>Previous Year Questions</h2>
+                        <p>Collection of previous year questions for practice.</p>
+                        <a href="https://link-to-your-cloud-resource" class="resource-link">View Resource</a>
+                     </div>
+                  </div>
+                  <div class="resource-card">
+                     <div class="icon"><img src="path/to/notes-icon.png" alt="Notes Icon"></div>
+ <div class="resource-info">
+                        <h2>Additional Study Materials</h2>
+                        <p>Extra resources for deeper understanding.</p>
+                        <a href="https://link-to-your-cloud-resource" class="resource-link">View Resource</a>
+                     </div>
+                  </div>
+                  <!-- Add more resource cards as needed -->
+               </div>
+            </section>
+            <footer id="footer">
+               <div class="padding1">
+                  <div class="row mb-3">
+                     <div class="col-3">
+                        <h3 class="footer-title secondary-title">Featured Posts</h3>
+                        <div class="feature-post py-1">
+                           <div class="flex-item mt-1">
+                              <article class="article">
+                                 <div class="d-flex">
+                                    <a href="../Blog Page/time.html">
+                                       <img src="d3eb86c87336057b026d.jpeg" class="object-fit" alt="">
+                                       <div class="px-1 mt-1">
+                                          <a href="../Blog Page/time.html" class="text-title display-2 text-light">The Arrow of Time</a>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="flex-item">
+                              <article class="article">
+                                 <div class="d-flex">
+                                    <a href="../Blog Page/bsm.html">
+                                       <img src="96385f8befeadf709522.jpeg" class="object-fit" alt="">
+                                       <div class="px-1 mt-1">
+                                          <a href="../Blog Page/bsm.html" class="text-title display-2 text-light">Beyond The Standard Model</a>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="flex-item">
+                              <article class="article">
+                                 <div class="d-flex">
+                                    <a href="../Blog Page/ultracold systems.html">
+                                       <img src="9e2da007d81a2814b334.jpeg" class="object-fit" alt="">
+                                       <div class="px-1 mt-1">
+                                          <a href="../Blog Page/ultracold systems.html" class="text-title display-2 text-light">Ultracold Atomic Systems</a>
+                                       </div>
+                                    </a>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-3">
+                        <h3 class="footer-title secondary-title">Other Links</h3>
+                        <div class="secondary-title text-light mb-1">
+                           <div class="mt-2">
+                              <a target="_blank" class="footer-link text-light" href="https://physics.iisertvm.ac.in/">School of Physics</a><br>
+                              <a target="_blank" class="footer-link text-light" href="http://www.iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
+                           </div>
+                           <div class="email">
+                              <i class="fas fa-envelope text-secondary"></i> psit@iisertvm.ac.in
+                              <div class="collapse">
+                                 <ul class="navbar-nav">
+                                    <div class="insta-icon"><a href="https://www.instagram.com/psitiiser/" class="nav-link"><i class="fab fa-instagram"></i></a></div>
+                                    <a href="https://m.facebook.com/psitiiser" class="nav-link"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.youtube.com/c/psitiiser/featured" class="nav-link"><i class="fab fa-youtube"></i></a>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </main>
+      </div>
+      <canvas class="webgl"></canvas>
+   </body>
+</html>
