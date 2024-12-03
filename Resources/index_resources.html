@@ -1,51 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Resources</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - PSIT</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #111;
+    }
+
+    .logo h1 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .logo p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .page-title {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2em;
+    }
+
+    .folders {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .folder {
+      text-align: center;
+    }
+
+    .folder img {
+      width: 100px;
+      height: auto;
+    }
+
+    .folder a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      background-color: #111;
+      padding: 20px;
+    }
+
+    .footer-left, .footer-right {
+      width: 45%;
+    }
+
+    .footer-left ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-left ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-left ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .social-links a img {
+      width: 24px;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Team Page/index_team.html">Meet The Team</a></li>
-                <li><a href="../Blog Page/index_blog.html">Blog</a></li>
-                <li><a href="../Events Page/index_events.html">Events</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Resources</h1>
-        <div class="resource-container">
-            <div class="resource-item">
-                <img src="../Resources/desktop+folder+tan.png" alt="Study Materials">
-                <p>Study Materials</p>
-            </div>
-            <div class="resource-item">
-                <img src="../Resources/desktop+folder+tan.png" alt="Previous Year Questions">
-                <p>Previous Year Questions</p>
-            </div>
-            <div class="resource-item">
-                <img src="../Resources/desktop+folder+tan.png" alt="Reference Books">
-                <p>Reference Books</p>
-            </div>
-            <div class="resource-item">
-                <img src="../Resources/desktop+folder+tan.png" alt="Miscellaneous">
-                <p>Miscellaneous</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>Other Links</p>
-        <p>School of Physics | <a href="mailto:psit@iisertvm.ac.in">psit@iisertvm.ac.in</a></p>
-        <div>
-            <a href="#"><img src="../Images/psitlogo.png" alt="Instagram"></a>
-            <a href="#"><img src="../Images/psitlogo.png" alt="YouTube"></a>
-        </div>
-    </footer>
+  <header>
+    <div class="logo">
+      <h1>Ψ(t)</h1>
+      <p>Physics Society, IISER Thiruvananthapuram</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Meet The Team</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Resources</h2>
+    <div class="folders">
+      <div class="folder">
+        <img src="folder-icon.png" alt="Study Materials">
+        <a href="study-materials.html">Study Materials</a>
+      </div>
+      <div class="folder">
+        <img src="folder-icon.png" alt="Previous Year Questions">
+        <a href="previous-questions.html">Previous Year Questions</a>
+      </div>
+      <div class="folder">
+        <img src="folder-icon.png" alt="Reference Books">
+        <a href="reference-books.html">Reference Books</a>
+      </div>
+      <div class="folder">
+        <img src="folder-icon.png" alt="Miscellaneous">
+        <a href="miscellaneous.html">Miscellaneous</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <h4>Featured Posts</h4>
+      <ul>
+        <li><a href="arrow-of-time.html">The Arrow of Time</a></li>
+        <li><a href="beyond-standard-model.html">Beyond The Standard Model</a></li>
+        <li><a href="ultracold-atomic-systems.html">Ultracold Atomic Systems</a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h4>Other Links</h4>
+      <p>School of Physics<br>IISER Thiruvananthapuram</p>
+      <p>Email: psit@iisertvm.ac.in</p>
+      <div class="social-links">
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
