@@ -1,121 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>PSIT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="b88d04fba731603756b1.css">
-    <script defer src="bundle.d30138a2dff5a0b6726a.js"></script>
-    <link href="main.css" rel="stylesheet">
-    <style>
-      /* Adjust space between header and featured posts */
-      .featured-section {
-        margin-top: 50px; /* Adjust this value as needed */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="padding1">
-        <header id="header" class="shadow bg-transparent">
-          <nav class="container navbar">
-            <a href="../index.html"><img src="../Images/psit_sqr_white.png" width="200" height="200" alt="PSIT Logo"></a>
-            <button class="toggle-button">
-              <span><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse">
-              <ul class="navbar-nav">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="../Team Page/index_team.html" class="nav-link">Meet The Team</a></li>
-                <li><a href="../Blog Page/index_blog.html" class="nav-link">Blog</a></li>
-                <li><a href="../Events Page/index_events.html" class="nav-link">Events</a></li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 20px;
+    }
+
+    .resources-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 40px auto;
+    }
+
+    .resource-item {
+      text-align: center;
+    }
+
+    .resource-item img {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+
+    .resource-item a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .resource-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .featured-posts, .links-section {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .links-section ul, .featured-posts ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .links-section li, .featured-posts li {
+      margin: 5px 0;
+    }
+
+    .links-section a, .featured-posts a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .links-section a:hover, .featured-posts a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Logo" width="100">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Meet The Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <h1>Resources</h1>
+    <div class="resources-container">
+      <!-- Resource Items -->
+      <div class="resource-item">
+        <a href="study-materials.html">
+          <img src="folder-icon.png" alt="Study Materials">
+          Study Materials
+        </a>
       </div>
-      <main id="site-main">
-        <!-- Featured Section -->
-        <section class="featured-section">
-          <footer id="footer">
-            <div class="padding1">
-              <div class="row mb-3">
-                <!-- Featured Posts Section -->
-                <div class="col-3">
-                  <h3 class="footer-title secondary-title">Featured Posts</h3>
-                  <div class="feature-post py-1">
-                    <!-- Post 1 -->
-                    <div class="flex-item mt-1">
-                      <article class="article">
-                        <div class="d-flex">
-                          <a href="../Blog Page/time.html">
-                            <img src="d3eb86c87336057b026d.jpeg" class="object-fit" alt="The Arrow of Time">
-                            <div class="px-1 mt-1">
-                              <a href="../Blog Page/time.html" class="text-title display-2 text-light">The Arrow of Time</a>
-                            </div>
-                          </a>
-                        </div>
-                      </article>
-                    </div>
-                    <!-- Post 2 -->
-                    <div class="flex-item">
-                      <article class="article">
-                        <div class="d-flex">
-                          <a href="../Blog Page/bsm.html">
-                            <img src="96385f8befeadf709522.jpeg" class="object-fit" alt="Beyond The Standard Model">
-                            <div class="px-1 mt-1">
-                              <a href="../Blog Page/bsm.html" class="text-title display-2 text-light">Beyond The Standard Model</a>
-                            </div>
-                          </a>
-                        </div>
-                      </article>
-                    </div>
-                    <!-- Post 3 -->
-                    <div class="flex-item">
-                      <article class="article">
-                        <div class="d-flex">
-                          <a href="../Blog Page/ultracold systems.html">
-                            <img src="9e2da007d81a2814b334.jpeg" class="object-fit" alt="Ultracold Atomic Systems">
-                            <div class="px-1 mt-1">
-                              <a href="../Blog Page/ultracold systems.html" class="text-title display-2 text-light">Ultracold Atomic Systems</a>
-                            </div>
-                          </a>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <!-- Other Links Section -->
-                <div class="col-3">
-                  <h3 class="footer-title secondary-title">Other Links</h3>
-                  <div class="secondary-title text-light mb-1">
-                    <div class="mt-2">
-                      <a target="_blank" class="footer-link text-light" href="https://physics.iisertvm.ac.in/">School of Physics</a><br>
-                      <a target="_blank" class="footer-link text-light" href="http://www.iisertvm.ac.in/">IISER Thiruvananthapuram</a><br>
-                    </div>
-                    <div class="email">
-                      <i class="fas fa-envelope text-secondary"></i> psit@iisertvm.ac.in
-                      <div class="collapse">
-                        <ul class="navbar-nav">
-                          <li><a href="https://www.instagram.com/psitiiser/" class="nav-link"><i class="fab fa-instagram"></i></a></li>
-                          <li><a href="https://m.facebook.com/psitiiser" class="nav-link"><i class="fab fa-facebook"></i></a></li>
-                          <li><a href="https://www.youtube.com/c/psitiiser/featured" class="nav-link"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </section>
-      </main>
+      <div class="resource-item">
+        <a href="previous-questions.html">
+          <img src="folder-icon.png" alt="Previous Year Questions">
+          Previous Year Questions
+        </a>
+      </div>
+      <div class="resource-item">
+        <a href="reference-books.html">
+          <img src="folder-icon.png" alt="Reference Books">
+          Reference Books
+        </a>
+      </div>
+      <div class="resource-item">
+        <a href="miscellaneous.html">
+          <img src="folder-icon.png" alt="Miscellaneous">
+          Miscellaneous
+        </a>
+      </div>
     </div>
-    <canvas class="webgl"></canvas>
-    <script src="0de295a0142760d57058.js"></script>
-  </body>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="featured-posts">
+      <h3>Featured Posts</h3>
+      <ul>
+        <li><a href="arrow-of-time.html">The Arrow of Time</a></li>
+        <li><a href="beyond-standard-model.html">Beyond The Standard Model</a></li>
+        <li><a href="ultracold-systems.html">Ultracold Atomic Systems</a></li>
+      </ul>
+    </div>
+    <div class="links-section">
+      <h3>Other Links</h3>
+      <ul>
+        <li><a href="https://physics.iisertvm.ac.in/" target="_blank">School of Physics</a></li>
+        <li><a href="http://www.iisertvm.ac.in/" target="_blank">IISER Thiruvananthapuram</a></li>
+      </ul>
+      <p>Email: psit@iisertvm.ac.in</p>
+      <p>
+        <a href="https://www.instagram.com/psitiiser/" target="_blank">Instagram</a> |
+        <a href="https://m.facebook.com/psitiiser" target="_blank">Facebook</a> |
+        <a href="https://www.youtube.com/c/psitiiser/featured" target="_blank">YouTube</a>
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
