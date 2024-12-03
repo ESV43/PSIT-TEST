@@ -1,80 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources - Physics Society</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSIT</title>
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- styl.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Physics Society Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#meet-team">Meet The Team</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#resources">Resources</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section class="resources-section">
-      <h1>Resources</h1>
-      <div class="folders">
-        <a href="https://link-to-study-materials" class="folder">
-          <img src="folder-icon.png" alt="Study Materials">
-          <p>Study Materials</p>
-        </a>
-        <a href="https://link-to-previous-questions" class="folder">
-          <img src="folder-icon.png" alt="Previous Year Questions">
-          <p>Previous Year Questions</p>
-        </a>
-        <a href="https://link-to-reference-books" class="folder">
-          <img src="folder-icon.png" alt="Reference Books">
-          <p>Reference Books</p>
-        </a>
-        <a href="https://link-to-miscellaneous" class="folder">
-          <img src="folder-icon.png" alt="Miscellaneous">
-          <p>Miscellaneous</p>
-        </a>
-      </div>
-    </section>
 
-    <section class="featured-posts">
-      <h2>Featured Posts</h2>
-      <div class="posts">
-        <div class="post">
-          <img src="post1.png" alt="The Arrow of Time">
-          <p>The Arrow of Time</p>
-        </div>
-        <div class="post">
-          <img src="post2.png" alt="Beyond The Standard Model">
-          <p>Beyond The Standard Model</p>
-        </div>
-        <div class="post">
-          <img src="post3.png" alt="Ultracold Atomic Systems">
-          <p>Ultracold Atomic Systems</p>
-        </div>
-      </div>
-    </section>
-  </main>
+    <!-- custom javascript main.js file -->
 
-  <footer>
-    <div class="footer-info">
-      <p>School of Physics<br>IISER Thiruvananthapuram<br>
-        <a href="mailto:psit@iisertvm.ac.in">psit@iisertvm.ac.in</a>
-      </p>
-    </div>
-    <div class="social-links">
-      <a href="#instagram" class="icon instagram"></a>
-      <a href="#facebook" class="icon facebook"></a>
-      <a href="#youtube" class="icon youtube"></a>
-    </div>
-  </footer>
-</body>
-</html>
+
+    <script src="./js folder/three.min.js"></script>
+    <script src="./js folder/staranimation.js" class="js-prop"></script>
+
+
+
+    <main id="site-main">
+        <!-- Header   -->
+        <header id="header" class ="shadow bg-transparent">
+            <nav class="container navbar">
+              <a href="./index.html"><img src="./Images/psit_sqr_white.png" width="200" height="200"></a>
+
+                <button class="toggle-button">
+                    <span>
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+
+
+                <!-- collapse on toggle button click -->
+                <div class="collapse">
+                    <ul class="navbar-nav">
+                        <a href="./index.html" class="nav-link">Home</a>
+                        <a href="./Team Page/index_team.html" class="nav-link">Meet The Team</a>
+                        <a href="./Blog Page/index_blog.html" class="nav-link">Blog</a>
+                        <a href="./Events Page/index_events.html" class="nav-link">Events</a>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End-->
+
+        <script src="./js folder/main.js"></script>
