@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: black;
+  background-image: url('background-stars.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.resources-section h1 {
+  margin-bottom: 30px;
+}
+
+.folders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.folder {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.folder img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.featured-posts {
+  margin-top: 50px;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.instagram { background-image: url('instagram-icon.png'); }
+.facebook { background-image: url('facebook-icon.png'); }
+.youtube { background-image: url('youtube-icon.png'); }
