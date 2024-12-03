@@ -3,167 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: black;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 50px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      margin: 0 15px;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      margin: 20px;
-    }
-
-    .resources-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin: 40px auto;
-    }
-
-    .resource-item {
-      text-align: center;
-    }
-
-    .resource-item img {
-      width: 100px;
-      height: 100px;
-      cursor: pointer;
-    }
-
-    .resource-item a {
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-      display: block;
-      margin-top: 10px;
-    }
-
-    .resource-item a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background: #111;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    .featured-posts, .links-section {
-      display: inline-block;
-      width: 45%;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    .links-section ul, .featured-posts ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .links-section li, .featured-posts li {
-      margin: 5px 0;
-    }
-
-    .links-section a, .featured-posts a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .links-section a:hover, .featured-posts a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Resources - Physics Society</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <img src="logo.png" alt="Logo" width="100">
+    <div class="logo">
+      <img src="logo.png" alt="Physics Society Logo">
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="team.html">Meet The Team</a>
-      <a href="blog.html">Blog</a>
-      <a href="events.html">Events</a>
-      <a href="resources.html">Resources</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#meet-team">Meet The Team</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Main Section -->
   <main>
-    <h1>Resources</h1>
-    <div class="resources-container">
-      <!-- Resource Items -->
-      <div class="resource-item">
-        <a href="study-materials.html">
+    <section class="resources-section">
+      <h1>Resources</h1>
+      <div class="folders">
+        <a href="https://link-to-study-materials" class="folder">
           <img src="folder-icon.png" alt="Study Materials">
-          Study Materials
+          <p>Study Materials</p>
         </a>
-      </div>
-      <div class="resource-item">
-        <a href="previous-questions.html">
+        <a href="https://link-to-previous-questions" class="folder">
           <img src="folder-icon.png" alt="Previous Year Questions">
-          Previous Year Questions
+          <p>Previous Year Questions</p>
         </a>
-      </div>
-      <div class="resource-item">
-        <a href="reference-books.html">
+        <a href="https://link-to-reference-books" class="folder">
           <img src="folder-icon.png" alt="Reference Books">
-          Reference Books
+          <p>Reference Books</p>
         </a>
-      </div>
-      <div class="resource-item">
-        <a href="miscellaneous.html">
+        <a href="https://link-to-miscellaneous" class="folder">
           <img src="folder-icon.png" alt="Miscellaneous">
-          Miscellaneous
+          <p>Miscellaneous</p>
         </a>
       </div>
-    </div>
+    </section>
+
+    <section class="featured-posts">
+      <h2>Featured Posts</h2>
+      <div class="posts">
+        <div class="post">
+          <img src="post1.png" alt="The Arrow of Time">
+          <p>The Arrow of Time</p>
+        </div>
+        <div class="post">
+          <img src="post2.png" alt="Beyond The Standard Model">
+          <p>Beyond The Standard Model</p>
+        </div>
+        <div class="post">
+          <img src="post3.png" alt="Ultracold Atomic Systems">
+          <p>Ultracold Atomic Systems</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <div class="featured-posts">
-      <h3>Featured Posts</h3>
-      <ul>
-        <li><a href="arrow-of-time.html">The Arrow of Time</a></li>
-        <li><a href="beyond-standard-model.html">Beyond The Standard Model</a></li>
-        <li><a href="ultracold-systems.html">Ultracold Atomic Systems</a></li>
-      </ul>
-    </div>
-    <div class="links-section">
-      <h3>Other Links</h3>
-      <ul>
-        <li><a href="https://physics.iisertvm.ac.in/" target="_blank">School of Physics</a></li>
-        <li><a href="http://www.iisertvm.ac.in/" target="_blank">IISER Thiruvananthapuram</a></li>
-      </ul>
-      <p>Email: psit@iisertvm.ac.in</p>
-      <p>
-        <a href="https://www.instagram.com/psitiiser/" target="_blank">Instagram</a> |
-        <a href="https://m.facebook.com/psitiiser" target="_blank">Facebook</a> |
-        <a href="https://www.youtube.com/c/psitiiser/featured" target="_blank">YouTube</a>
+    <div class="footer-info">
+      <p>School of Physics<br>IISER Thiruvananthapuram<br>
+        <a href="mailto:psit@iisertvm.ac.in">psit@iisertvm.ac.in</a>
       </p>
+    </div>
+    <div class="social-links">
+      <a href="#instagram" class="icon instagram"></a>
+      <a href="#facebook" class="icon facebook"></a>
+      <a href="#youtube" class="icon youtube"></a>
     </div>
   </footer>
 </body>
