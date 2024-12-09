@@ -1,112 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PSIT</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="main.css">
-  <script defer src="bundle.d30138a2dff5a0b6726a.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <!-- Header Section -->
-    <div class="padding1">
-      <header id="header" class="shadow bg-transparent">
-        <nav class="container navbar">
-          <img src="../Images/psit_sqr_white.png" width="200" height="200" alt="PSIT Logo">
-          <button class="toggle-button">
-            <span><i class="fas fa-bars"></i></span>
-          </button>
-          <div class="collapse">
-            <ul class="navbar-nav">
-              <li><a href="../index.html" class="nav-link">Home</a></li>
-              <li><a href="../Team Page/index_team.html" class="nav-link">Meet The Team</a></li>
-              <li><a href="../Blog Page/index_blog.html" class="nav-link">Blog</a></li>
-              <li><a href="../Events Page/index_events.html" class="nav-link">Events</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-    <!-- Main Section -->
-    <main id="site-main">
-      <!-- About Us Section -->
-      <section class="about-us">
-        <header class="about-us__intro">
-          <h2 class="section-title">Events</h2>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>PSIT</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      <script defer="defer" src="bundle.d30138a2dff5a0b6726a.js"></script>
+      <link href="main.css" rel="stylesheet">
+      
+      <!-- Instagram Embed Script -->
+      <script async src="https://www.instagram.com/embed.js"></script>
+      
+      <style>
+         .social-feed {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+         }
+         .social-feed blockquote {
+            max-width: 340px !important;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+      <div class="padding1">
+        <header id="header" class="shadow bg-transparent">
+          <nav class="container navbar">
+            <a href="../index.html"><img src="../Images/psit_sqr_white.png" width="200" height="200"></a>
+            <button class="toggle-button"><span><i class="fas fa-bars"></i></span></button>
+            <div class="collapse">
+              <ul class="navbar-nav"><a href="../index.html" class="nav-link">Home</a><a href="../Team Page/index_team.html" class="nav-link">Meet The Team</a><a href="../Blog Page/index_blog.html" class="nav-link">Blog</a><a href="../Events Page/index_events.html" class="nav-link">Events</a><a href="../Resources/resource.html" class="nav-link">Resources</a></ul>
+            </div>
+            <ul class="navbar-nav"></ul>
+          </nav>
         </header>
-        <br><br>
-        <div class="about-us__body"></div>
-      </section>
-      <script defer src="../js folder/modal.js"></script>
-
-      <!-- Events Showcase Section -->
-      <section class="events-showcase">
-        <div class="blog-container">
-          <!-- Event 1 -->
-          <div class="blog-box">
-            <div class="blog-text">
-              <span>2nd July 2022</span>
-              <a href="#" class="blog-title">Peer Discussion</a>
-              <p>Hosted by Arijit Das, a PhD student. An overview of the Standard Model of Particle Physics.</p>
-              <a href="#" data-modal-target="#modal1" class="btn btn-primary hover-border">
-                <span>Read More</span>
-              </a>
-              <div class="modal" id="modal1">
-                <div class="modal-header">
-                  <div class="title">Peer Discussion - 2nd July 2022</div>
-                  <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body text-justify">
-                  &emsp;&emsp;&emsp;Hosted by Arijit Das, a PhD student. An overview of the Standard Model of Particle Physics...
-                </div>
-              </div>
-              <div id="overlay"></div>
-            </div>
-          </div>
-
-          <!-- Event 2 -->
-          <div class="blog-box">
-            <div class="blog-text">
-              <span>26th June 2022</span>
-              <a href="#" class="blog-title">Movie Screening</a>
-              <p class="text-justify">PSIT will be starting our monthly screenings - we will be kicking off with an all-time classic, "2001: A Space Odyssey".</p>
-              <a href="#" data-modal-target="#modal2" class="btn btn-primary hover-border">
-                <span>Read More</span>
-              </a>
-              <div class="modal" id="modal2">
-                <div class="modal-header">
-                  <div class="title">Movie Screening: 2001: A Space Odyssey</div>
-                  <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body text-justify">
-                  &emsp;&emsp;&emsp;PSIT will be starting our monthly screenings - we will be kicking off with an all-time classic, "2001: A Space Odyssey"...
-                </div>
-              </div>
-              <div id="overlay"></div>
-            </div>
-          </div>
-          
-          <!-- Add more events here following the same structure -->
-
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-      <!-- Add footer content here -->
-    </footer>
-  </div>
-
-  <script src="0de295a0142760d57058.js"></script>
-</body>
-
+      </div>
+         <script src="0de295a0142760d57058.js"></script>
+         <main id="site-main">
+            <section class="about-us">
+               <header class="about-us__intro">
+                  <h2 class="section-title">Events</h2>
+                  
+                  <!-- Social Media Feed Section -->
+                  <div class="social-feed">
+                     <!-- Instagram Posts -->
+                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/YOUR_POST_ID1/" data-instgrm-version="14"></blockquote>
+                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/YOUR_POST_ID2/" data-instgrm-version="14"></blockquote>
+                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/YOUR_POST_ID3/" data-instgrm-version="14"></blockquote>
+                  </div>
+                  
+                  <!-- Social Media Links -->
+                  <div class="social-media-links">
+                     <div class="social-icons">
+                        <a href="https://www.instagram.com/psitiiser/" target="_blank" class="nav-link" style="color:#239cca">
+                           <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://m.facebook.com/psitiiser" target="_blank" class="nav-link" style="color:#239cca">
+                           <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://www.youtube.com/c/psitiiser/featured" target="_blank" class="nav-link" style="color:#239cca">
+                           <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                     </div>
+                  </div>
+               </header>
+               <br><br>
+               <div class="about-us__body"></div>
+            </section>
+            
+            <!-- Rest of the existing HTML remains the same -->
+            
+         </main>
+      </div>
+      <canvas class="webgl"></canvas>
+   </body>
 </html>
